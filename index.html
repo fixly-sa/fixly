@@ -1,79 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fixly | فكسلي - حلول مبتكرة لتوصيلك بأفضل الحرفيين في السعودية</title>
+<meta name="description" content="فكسلي منصة سعودية مبتكرة لربط العملاء بالحرفيين المحترفين في الصيانة، العزل، الكهرباء، النجارة، الدهان، الستالايت، والسباكة. جودة، سرعة، تواصل مباشر.">
+<style>
+body {margin:0;font-family:'Arial',sans-serif;line-height:1.6;color:#333;background:#f9f9f9;}
+header{background:#004aad;color:white;position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:10px 20px;z-index:1000;box-shadow:0 2px 5px rgba(0,0,0,0.2);}
+header h1{margin:0;font-size:1.5em;cursor:pointer;}
+header a.call-btn{background:#ffce00;color:#000;text-decoration:none;padding:8px 15px;border-radius:5px;font-weight:bold;transition:0.3s;}
+header a.call-btn:hover{background:#ffd633;}
+nav a{color:white;text-decoration:none;margin:0 10px;font-weight:bold;}
+section{padding:40px 20px;max-width:1200px;margin:auto;}
+h2{color:#004aad;margin-bottom:15px;text-align:center;}
+.service{display:flex;flex-wrap:wrap;align-items:flex-start;margin-bottom:30px;background:white;padding:15px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+.service img{width:100%;max-width:250px;margin-right:20px;border-radius:8px;}
+.service-content{flex:1;}
+.service-content h3{color:#004aad;margin-top:0;}
+.service-content p{margin-bottom:10px;}
+.service-content a{display:inline-block;margin-top:10px;background:#ffce00;color:#000;text-decoration:none;padding:6px 12px;border-radius:5px;font-weight:bold;transition:0.3s;}
+.service-content a:hover{background:#ffd633;}
+footer{background:#222;color:white;text-align:center;padding:20px;margin-top:40px;}
+footer a{color:#ffce00;text-decoration:none;margin:0 10px;}
+@media(max-width:768px){.service{flex-direction:column}.service img{margin:0 0 15px 0;}}
+.modal {display:none;position:fixed;z-index:2000;left:0;top:0;width:100%;height:100%;overflow:auto;background:rgba(0,0,0,0.6);}
+.modal-content {background:#fff;margin:10% auto;padding:20px;border-radius:10px;max-width:600px;position:relative;}
+.close {color:#aaa;position:absolute;top:10px;right:15px;font-size:28px;font-weight:bold;cursor:pointer;}
+.close:hover{color:black;}
+</style>
+</head>
+<body>
+
+<header>
+<h1 onclick="window.location.href='#'">Fixly | فكسلي</h1>
+<nav>
+<a href="#services">خدماتنا</a>
+<a href="#why">لماذا نحن</a>
+<a href="#about">من نحن</a>
+<a href="#contact">تواصل</a>
+</nav>
+<a href="tel:+966531944492" class="call-btn">اتصل الآن</a>
+</header>
+
+<section id="hero">
+<h2>فكسلي – حلول مبتكرة توصلك بأفضل الحرفيين في السعودية</h2>
+<p>منصة سعودية متخصصة في ربط العملاء بالحرفيين المحترفين في الصيانة، العزل، الكهرباء، النجارة، الدهان، الستالايت، السباكة والترميم. نضمن جودة التنفيذ وسرعة الاستجابة مع تواصل مباشر بدون تعقيد.</p>
+<a href="tel:+966531944492" class="call-btn">اتصل الآن</a>
+</section>
+
 <section id="services">
 <h2>خدماتنا</h2>
 
+<!-- العزل -->
 <div class="service">
-<img src="https://cdn-icons-png.flaticon.com/512/2917/2917242.png" alt="خدمة العزل" style="width:80px;">
+<img src="https://via.placeholder.com/250x150?text=عزل" alt="خدمة العزل">
 <div class="service-content">
 <h3>خدمات العزل</h3>
-<p>عزل الأسطح، خزانات، حمامات سباحة، فوم، إيبوكسي. شرح شامل لكل نوع مع نصائح الصيانة وفوائد طويلة المدى. فريق محترف لضمان جودة التنفيذ وحماية المباني.</p>
-<a href="#" onclick="openModal('modal1')">المزيد</a>
+<p>نقدم جميع أنواع العزل: أسطح، خزانات، فوم، إيبوكسي، حمامات سباحة. شرح مفصل لكل نوع، الفائدة، المشاكل التي يحلها العزل، ونصائح الصيانة. جودة تنفيذ مضمونة مع فريق محترف لضمان حماية المبنى لفترات طويلة.</p>
+<a href="tel:+966531944492" class="call-btn">اطلب الخدمة</a>
 </div>
 </div>
 
+<!-- النجارة -->
 <div class="service">
-<img src="https://cdn-icons-png.flaticon.com/512/2733/2733438.png" alt="السباكة" style="width:80px;">
+<img src="https://via.placeholder.com/250x150?text=نجارة" alt="خدمة النجارة">
+<div class="service-content">
+<h3>خدمة النجارة</h3>
+<p>تصميم وتركيب الأثاث الخشبي، أبواب ونوافذ، وحدات مطابخ، وخدمات النجارة حسب الطلب. دقة في التنفيذ، استخدام أفضل المواد، وتخصيص حسب احتياجات العميل.</p>
+<a href="tel:+966531944492" class="call-btn">اطلب الخدمة</a>
+</div>
+</div>
+
+<!-- الدهان -->
+<div class="service">
+<img src="https://via.placeholder.com/250x150?text=دهان" alt="خدمة الدهان">
+<div class="service-content">
+<h3>خدمة الدهان</h3>
+<p>طلاء داخلي وخارجي، دهانات حديثة وراقية، معالجة الأسطح وتحضيرات قبل الطلاء. فريق محترف لضمان جودة اللون وثباته لفترات طويلة.</p>
+<a href="tel:+966531944492" class="call-btn">اطلب الخدمة</a>
+</div>
+</div>
+
+<!-- الستالايت -->
+<div class="service">
+<img src="https://via.placeholder.com/250x150?text=ستالايت" alt="خدمة الستالايت">
+<div class="service-content">
+<h3>خدمة الستالايت</h3>
+<p>تركيب وصيانة أجهزة الاستقبال، ضبط الإشارات، تحديثات المعدات، وضمان تشغيل سلس لجميع المنازل والشركات.</p>
+<a href="tel:+966531944492" class="call-btn">اطلب الخدمة</a>
+</div>
+</div>
+
+<!-- السباكة -->
+<div class="service">
+<img src="https://via.placeholder.com/250x150?text=سباكة" alt="خدمة السباكة">
 <div class="service-content">
 <h3>السباكة</h3>
-<p>كشف تسربات المياه، إصلاح الأعطال، تركيب الأدوات الصحية، صيانة شاملة. حلول سريعة وفعالة لكل مشاكل السباكة مع ضمان رضا العميل.</p>
-<a href="#" onclick="openModal('modal2')">المزيد</a>
+<p>كشف تسربات المياه، إصلاح الأعطال، تركيب الأدوات الصحية، وصيانة شاملة للمنشآت والمنازل. حلول سريعة وفعالة لكل مشاكل السباكة.</p>
+<a href="tel:+966531944492" class="call-btn">اطلب الخدمة</a>
 </div>
 </div>
 
+<!-- الكهرباء -->
 <div class="service">
-<img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="الكهرباء" style="width:80px;">
+<img src="https://via.placeholder.com/250x150?text=كهرباء" alt="خدمة الكهرباء">
 <div class="service-content">
 <h3>الكهرباء</h3>
-<p>تمديدات، صيانة أعطال الكهرباء، تركيب مفاتيح ومخارج، الالتزام بمعايير السلامة. فريق كهربائي محترف لضمان أداء آمن لجميع المنشآت.</p>
-<a href="#" onclick="openModal('modal3')">المزيد</a>
+<p>تمديدات وصيانة أعطال الكهرباء، تركيب مفاتيح ومخارج، والتزام كامل بمعايير السلامة. فريق كهربائي محترف لضمان أداء آمن لجميع المنشآت.</p>
+<a href="tel:+966531944492" class="call-btn">اطلب الخدمة</a>
 </div>
 </div>
 
+<!-- الصيانة العامة -->
 <div class="service">
-<img src="https://cdn-icons-png.flaticon.com/512/2942/2942565.png" alt="الصيانة العامة" style="width:80px;">
+<img src="https://via.placeholder.com/250x150?text=صيانة" alt="خدمة الصيانة">
 <div class="service-content">
 <h3>الصيانة العامة والترميم</h3>
-<p>ترميم المباني، صيانة دورية، حلول شاملة للمنازل والمنشآت. جودة عالية وسرعة تنفيذ مع متابعة مستمرة لضمان رضا العميل الكامل.</p>
-<a href="#" onclick="openModal('modal4')">المزيد</a>
-</div>
-</div>
-
-<div class="service">
-<img src="https://cdn-icons-png.flaticon.com/512/2765/2765898.png" alt="النجارة" style="width:80px;">
-<div class="service-content">
-<h3>النجارة</h3>
-<p>تصميم وتركيب الأثاث، أبواب، شبابيك، خزن، وكل أعمال النجارة المنزلية والتجارية. جودة عالية مع لمسات فنية احترافية.</p>
-<a href="#" onclick="openModal('modal5')">المزيد</a>
-</div>
-</div>
-
-<div class="service">
-<img src="https://cdn-icons-png.flaticon.com/512/2916/2916289.png" alt="الدهان" style="width:80px;">
-<div class="service-content">
-<h3>الدهان</h3>
-<p>دهانات داخلية وخارجية، تجهيز الأسطح، دهانات مودرن وكلاسيك، مع ضمان توزيع اللون بشكل مثالي وفريق محترف لضمان الجودة.</p>
-<a href="#" onclick="openModal('modal6')">المزيد</a>
-</div>
-</div>
-
-<div class="service">
-<img src="https://cdn-icons-png.flaticon.com/512/2902/2902069.png" alt="الستالايت" style="width:80px;">
-<div class="service-content">
-<h3>الستالايت</h3>
-<p>تركيب وضبط الستالايت لجميع القنوات، الصيانة الدورية، وحلول تقنية دقيقة لضمان استقبال مثالي. فريق متخصص ومؤهل لضمان الأداء.</p>
-<a href="#" onclick="openModal('modal7')">المزيد</a>
+<p>ترميم المباني، صيانة دورية، حلول شاملة للمنازل والمنشآت. تقديم أعلى جودة بأفضل سرعة مع متابعة مستمرة لضمان رضا العميل الكامل.</p>
+<a href="tel:+966531944492" class="call-btn">اطلب الخدمة</a>
 </div>
 </div>
 
 </section>
 
-<style>
-.service{display:flex;align-items:center;background:white;padding:20px;margin-bottom:25px;border-radius:15px;box-shadow:0 6px 20px rgba(0,0,0,0.1);transition:all 0.3s ease;}
-.service:hover{transform:translateY(-5px);box-shadow:0 12px 28px rgba(0,0,0,0.2);}
-.service img{margin-right:20px;transition:all 0.3s ease;}
-.service img:hover{transform:scale(1.1);}
-.service-content h3{font-size:1.6em;color:#004aad;margin-bottom:10px;}
-.service-content p{font-size:1.05em;line-height:1.7;}
-.service-content a{background:#ffce00;color:#000;padding:10px 15px;border-radius:8px;text-decoration:none;font-weight:bold;transition:0.3s;}
-.service-content a:hover{background:#ffd633;}
-@media(max-width:768px){.service{flex-direction:column;text-align:center}.service img{margin:0 0 15px 0;}}
-</style>
+<section id="why">
+<h2>لماذا فكسلي؟</h2>
+<p>خبرة في السوق السعودي، سرعة استجابة، حرفيون محترفون، جودة تنفيذ، وتواصل مباشر مع العميل. نضمن أفضل تجربة لكل من يحتاج خدمات صيانة وعزل وترميم.</p>
+</section>
+
+<section id="about">
+<h2>من نحن</h2>
+<p>فكسلي منصة سعودية رائدة في مجال الخدمات المنزلية والصيانة، نربط العملاء مباشرة بالحرفيين المحترفين مع التزام كامل بالجودة ورضا العميل.</p>
+</section>
+
+<section id="contact">
+<h2>تواصل معنا</h2>
+<p>الهاتف: <a href="tel:+966531944492">+966531944492</a></p>
+<p>البريد الإلكتروني: <a href="mailto:fixly.sa@gmail.com">fixly.sa@gmail.com</a></p>
+</section>
+
+<footer>
+<p>Fixly | فكسلي - حلول الصيانة والخدمات المنزلية في السعودية</p>
+<p>© جميع الحقوق محفوظة</p>
+<p><a href="https://fixly-sa.github.io/fixly/">رابط Fixly الرسمي</a></p>
+</footer>
+
+</body>
+</html>
