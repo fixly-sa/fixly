@@ -10,26 +10,27 @@
 <style>
 body {margin:0;font-family:'Arial',sans-serif;line-height:1.6;color:#333;background:#f9f9f9;}
 header{background:#004aad;color:white;position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:15px 25px;z-index:1000;box-shadow:0 4px 6px rgba(0,0,0,0.2);}
-header h1 a{color:white;text-decoration:none;font-size:1.6em;font-weight:bold;}
-header a.call-btn{background:#ffce00;color:#000;text-decoration:none;padding:10px 18px;border-radius:6px;font-weight:bold;transition:0.3s;}
+header h1 a{color:white;text-decoration:none;font-size:1.7em;font-weight:bold;}
+header a.call-btn{background:#ffce00;color:#000;text-decoration:none;padding:10px 20px;border-radius:8px;font-weight:bold;transition:0.3s;}
 header a.call-btn:hover{background:#ffd633;}
-nav a{color:white;text-decoration:none;margin:0 12px;font-weight:bold;transition:0.3s;}
+nav a{color:white;text-decoration:none;margin:0 14px;font-weight:bold;transition:0.3s;}
 nav a:hover{color:#ffd633;}
 section{padding:50px 25px;max-width:1200px;margin:auto;}
-h2{color:#004aad;margin-bottom:25px;text-align:center;font-size:2em;}
-.service{display:flex;flex-wrap:wrap;align-items:flex-start;margin-bottom:35px;background:white;padding:20px;border-radius:12px;box-shadow:0 6px 15px rgba(0,0,0,0.1);transition:0.3s;}
-.service:hover{box-shadow:0 8px 20px rgba(0,0,0,0.15);}
-.service img{width:100%;max-width:300px;margin-right:25px;border-radius:10px;object-fit:cover;}
+h2{color:#004aad;margin-bottom:30px;text-align:center;font-size:2.2em;}
+.service{display:flex;flex-wrap:wrap;align-items:flex-start;margin-bottom:35px;background:white;padding:25px;border-radius:15px;box-shadow:0 6px 20px rgba(0,0,0,0.15);transition:0.4s;}
+.service:hover{box-shadow:0 10px 28px rgba(0,0,0,0.2);}
+.service img{width:100%;max-width:320px;margin-right:25px;border-radius:12px;object-fit:cover;transition:0.3s;}
+.service img:hover{transform:scale(1.05);}
 .service-content{flex:1;}
-.service-content h3{color:#004aad;margin-top:0;font-size:1.4em;}
-.service-content p{margin-bottom:12px;font-size:1em;}
-.service-content a{display:inline-block;margin-top:12px;background:#ffce00;color:#000;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:bold;transition:0.3s;}
+.service-content h3{color:#004aad;margin-top:0;font-size:1.5em;}
+.service-content p{margin-bottom:12px;font-size:1.05em;}
+.service-content a{display:inline-block;margin-top:12px;background:#ffce00;color:#000;text-decoration:none;padding:10px 18px;border-radius:8px;font-weight:bold;transition:0.3s;}
 .service-content a:hover{background:#ffd633;}
 footer{background:#222;color:white;text-align:center;padding:25px;margin-top:40px;font-size:0.95em;}
 footer a{color:#ffce00;text-decoration:none;margin:0 8px;}
 @media(max-width:768px){.service{flex-direction:column}.service img{margin:0 0 18px 0;}}
 .modal {display:none;position:fixed;z-index:2000;left:0;top:0;width:100%;height:100%;overflow:auto;background:rgba(0,0,0,0.65);}
-.modal-content {background:#fff;margin:8% auto;padding:25px;border-radius:12px;max-width:650px;position:relative;line-height:1.7;font-size:1em;}
+.modal-content {background:#fff;margin:8% auto;padding:30px;border-radius:15px;max-width:700px;position:relative;line-height:1.8;font-size:1em;}
 .close {color:#aaa;position:absolute;top:12px;right:18px;font-size:28px;font-weight:bold;cursor:pointer;}
 .close:hover{color:black;}
 </style>
@@ -56,18 +57,18 @@ footer a{color:#ffce00;text-decoration:none;margin:0 8px;}
 <section id="services">
 <h2>خدماتنا</h2>
 
-<!-- خدمة نموذجية -->
+<!-- الخدمات -->
 <div class="service">
-<img src="https://via.placeholder.com/300x200?text=عزل" alt="خدمة العزل">
+<img src="https://images.unsplash.com/photo-1598569202213-9edc6c8fa9e0?auto=format&fit=crop&w=320&q=80" alt="خدمة العزل">
 <div class="service-content">
 <h3>خدمات العزل</h3>
-<p>العزل الأسطح، خزانات، حمامات سباحة، فوم، إيبوكسي. شرح شامل لكل نوع مع نصائح الصيانة وفوائد طويلة المدى. فريق محترف لضمان جودة التنفيذ وحماية المباني.</p>
+<p>عزل الأسطح، خزانات، حمامات سباحة، فوم، إيبوكسي. شرح شامل لكل نوع مع نصائح الصيانة وفوائد طويلة المدى. فريق محترف لضمان جودة التنفيذ وحماية المباني.</p>
 <a href="#" onclick="openModal('modal1')">المزيد</a>
 </div>
 </div>
 
 <div class="service">
-<img src="https://via.placeholder.com/300x200?text=سباكة" alt="خدمة السباكة">
+<img src="https://images.unsplash.com/photo-1581091012184-5b6c12fc4e6e?auto=format&fit=crop&w=320&q=80" alt="خدمة السباكة">
 <div class="service-content">
 <h3>السباكة</h3>
 <p>كشف تسربات المياه، إصلاح الأعطال، تركيب الأدوات الصحية، صيانة شاملة. حلول سريعة وفعالة لكل مشاكل السباكة مع ضمان رضا العميل.</p>
@@ -76,7 +77,7 @@ footer a{color:#ffce00;text-decoration:none;margin:0 8px;}
 </div>
 
 <div class="service">
-<img src="https://via.placeholder.com/300x200?text=كهرباء" alt="خدمة الكهرباء">
+<img src="https://images.unsplash.com/photo-1581092580493-5fcf2fdb95f5?auto=format&fit=crop&w=320&q=80" alt="خدمة الكهرباء">
 <div class="service-content">
 <h3>الكهرباء</h3>
 <p>تمديدات، صيانة أعطال الكهرباء، تركيب مفاتيح ومخارج، مع الالتزام بمعايير السلامة. فريق كهربائي محترف لضمان أداء آمن لجميع المنشآت.</p>
@@ -85,7 +86,7 @@ footer a{color:#ffce00;text-decoration:none;margin:0 8px;}
 </div>
 
 <div class="service">
-<img src="https://via.placeholder.com/300x200?text=صيانة" alt="الصيانة العامة">
+<img src="https://images.unsplash.com/photo-1596123845149-f67b2f3b0ee8?auto=format&fit=crop&w=320&q=80" alt="الصيانة العامة">
 <div class="service-content">
 <h3>الصيانة العامة والترميم</h3>
 <p>ترميم المباني، صيانة دورية، حلول شاملة للمنازل والمنشآت. جودة عالية وسرعة تنفيذ مع متابعة مستمرة لضمان رضا العميل الكامل.</p>
@@ -94,7 +95,7 @@ footer a{color:#ffce00;text-decoration:none;margin:0 8px;}
 </div>
 
 <div class="service">
-<img src="https://via.placeholder.com/300x200?text=نجارة" alt="خدمة النجارة">
+<img src="https://images.unsplash.com/photo-1608889170480-15b7d33c1c1f?auto=format&fit=crop&w=320&q=80" alt="خدمة النجارة">
 <div class="service-content">
 <h3>النجارة</h3>
 <p>تصميم وتركيب الأثاث، أبواب، شبابيك، خزن، وكل أعمال النجارة المنزلية والتجارية. جودة عالية مع لمسات فنية احترافية.</p>
@@ -103,16 +104,16 @@ footer a{color:#ffce00;text-decoration:none;margin:0 8px;}
 </div>
 
 <div class="service">
-<img src="https://via.placeholder.com/300x200?text=دهان" alt="خدمة الدهان">
+<img src="https://images.unsplash.com/photo-1597095416591-c6f4a0847f9d?auto=format&fit=crop&w=320&q=80" alt="خدمة الدهان">
 <div class="service-content">
 <h3>الدهان</h3>
-<p>دهانات داخلية وخارجية، تجهيز الأسطح، دهانات مودرن وكلاسيك، مع ضمان توزيع اللون بشكل مثالي ومتناسق. فريق محترف لضمان جودة عالية.</p>
+<p>دهانات داخلية وخارجية، تجهيز الأسطح، دهانات مودرن وكلاسيك، مع ضمان توزيع اللون بشكل مثالي وفريق محترف لضمان الجودة.</p>
 <a href="#" onclick="openModal('modal6')">المزيد</a>
 </div>
 </div>
 
 <div class="service">
-<img src="https://via.placeholder.com/300x200?text=ستالايت" alt="خدمة الستالايت">
+<img src="https://images.unsplash.com/photo-1604647622961-5cf43f4d6a2a?auto=format&fit=crop&w=320&q=80" alt="خدمة الستالايت">
 <div class="service-content">
 <h3>الستالايت</h3>
 <p>تركيب وضبط الستالايت لجميع القنوات، الصيانة الدورية، وحلول تقنية دقيقة لضمان استقبال مثالي. فريق متخصص ومؤهل لضمان الأداء.</p>
@@ -148,7 +149,7 @@ footer a{color:#ffce00;text-decoration:none;margin:0 8px;}
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal1')">&times;</span>
 <h3>خدمات العزل</h3>
-<p>تفاصيل كاملة عن العزل لكل نوع، نصائح الصيانة، المشاكل الشائعة، وضمان حماية المباني لفترات طويلة.</p>
+<p>شرح كامل لكل نوع عزل، خطوات التنفيذ، المشاكل الشائعة، نصائح الصيانة، ضمان حماية المبنى وفريق محترف متخصص. SEO: عزل أسطح، خزانات، حمامات سباحة، فوم، إيبوكسي.</p>
 </div>
 </div>
 
@@ -156,7 +157,7 @@ footer a{color:#ffce00;text-decoration:none;margin:0 8px;}
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal2')">&times;</span>
 <h3>السباكة</h3>
-<p>كشف تسربات المياه، إصلاح الأعطال، تركيب الأدوات الصحية، صيانة شاملة للمنشآت والمنازل، مع ضمان رضا العميل.</p>
+<p>كشف تسربات المياه، إصلاح الأعطال، تركيب الأدوات الصحية، صيانة شاملة، حلول سريعة لكل مشاكل السباكة. SEO: سباكة، صيانة أنابيب، تركيب أدوات صحية.</p>
 </div>
 </div>
 
@@ -164,7 +165,7 @@ footer a{color:#ffce00;text-decoration:none;margin:0 8px;}
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal3')">&times;</span>
 <h3>الكهرباء</h3>
-<p>تمديدات وصيانة أعطال الكهرباء، تركيب مفاتيح ومخارج، الالتزام الكامل بمعايير السلامة، فريق محترف لضمان الأداء.</p>
+<p>تمديدات وصيانة أعطال الكهرباء، تركيب مفاتيح ومخارج، الالتزام بمعايير السلامة. SEO: كهرباء، تمديدات كهربائية، صيانة كهرباء.</p>
 </div>
 </div>
 
@@ -172,7 +173,7 @@ footer a{color:#ffce00;text-decoration:none;margin:0 8px;}
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal4')">&times;</span>
 <h3>الصيانة العامة والترميم</h3>
-<p>ترميم المباني، صيانة دورية، حلول شاملة للمنازل والمنشآت. تقديم أعلى جودة بأفضل سرعة مع متابعة مستمرة لضمان رضا العميل الكامل.</p>
+<p>ترميم المباني، صيانة دورية، حلول شاملة. متابعة مستمرة لضمان رضا العميل. SEO: صيانة عامة، ترميم، صيانة دورية.</p>
 </div>
 </div>
 
@@ -180,7 +181,7 @@ footer a{color:#ffce00;text-decoration:none;margin:0 8px;}
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal5')">&times;</span>
 <h3>النجارة</h3>
-<p>تصميم وتركيب الأثاث، أبواب، شبابيك، خزن، وكل أعمال النجارة المنزلية والتجارية. جودة عالية مع لمسات فنية احترافية.</p>
+<p>تصميم وتركيب الأثاث، أبواب، شبابيك، خزن، أعمال نجارة متنوعة. SEO: نجارة، أثاث، أبواب شبابيك، صيانة نجارة.</p>
 </div>
 </div>
 
@@ -188,7 +189,7 @@ footer a{color:#ffce00;text-decoration:none;margin:0 8px;}
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal6')">&times;</span>
 <h3>الدهان</h3>
-<p>دهانات داخلية وخارجية، تجهيز الأسطح، دهانات مودرن وكلاسيك، مع ضمان توزيع اللون بشكل مثالي وفريق محترف لضمان الجودة.</p>
+<p>دهانات داخلية وخارجية، تجهيز الأسطح، دهانات مودرن وكلاسيك. SEO: دهان، دهانات داخلية، دهانات خارجية.</p>
 </div>
 </div>
 
@@ -196,7 +197,7 @@ footer a{color:#ffce00;text-decoration:none;margin:0 8px;}
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal7')">&times;</span>
 <h3>الستالايت</h3>
-<p>تركيب وضبط الستالايت لجميع القنوات، الصيانة الدورية، وحلول تقنية دقيقة لضمان استقبال مثالي. فريق متخصص ومؤهل لضمان الأداء.</p>
+<p>تركيب وضبط الستالايت لجميع القنوات، الصيانة الدورية، حلول دقيقة. SEO: ستالايت، تركيب، صيانة ستالايت، استقبال قنوات.</p>
 </div>
 </div>
 
