@@ -3,181 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Fixly | فكسلي – منصة الخدمات والحرفيين في السعودية</title>
-<meta name="description" content="فكسلي منصة سعودية تربطك بأفضل الحرفيين في العزل، السباكة، الكهرباء، الصيانة والترميم. تنفيذ احترافي – تواصل مباشر – جودة مضمونة.">
-
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
+<title>Fixly | فكسلي - حلول مبتكرة لتوصيلك بأفضل الحرفيين في السعودية</title>
+<meta name="description" content="فكسلي منصة سعودية مبتكرة لربط العملاء بالحرفيين المحترفين في الصيانة، العزل، الكهرباء، السباكة، والترميم. جودة، سرعة، تواصل مباشر.">
+<meta name="keywords" content="فكسلي, خدمات منزلية, صيانة, عزل, كهرباء, سباكة, السعودية, توصيل حرفيين, جودة, سرعة, Fixly, الصيانة المنزلية, حرفيين سعوديين">
 <style>
-:root{
---main:#0a1f44;
---accent:#cfae70;
---bg:#f5f7fa;
-}
-
-*{box-sizing:border-box}
-
-body{
-margin:0;
-font-family:'Cairo','Poppins',sans-serif;
-background:var(--bg);
-color:#333;
-line-height:1.8;
-}
-
-/* Header */
-header{
-background:rgba(10,31,68,0.95);
-position:sticky;
-top:0;
-z-index:1000;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 30px;
-box-shadow:0 5px 20px rgba(0,0,0,0.15);
-}
-
-header h1{
-margin:0;
-font-size:1.6em;
-color:white;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 12px;
-font-weight:600;
-transition:.3s;
-}
-
-nav a:hover{color:var(--accent)}
-
-.call-btn{
-background:var(--accent);
-color:#000;
-padding:10px 20px;
-border-radius:30px;
-text-decoration:none;
-font-weight:700;
-transition:.3s;
-}
-
-.call-btn:hover{
-background:#e0c285;
-transform:scale(1.05);
-}
-
-/* Hero */
-#hero{
-background:linear-gradient(135deg,#0a1f44,#123b7a);
-color:white;
-text-align:center;
-padding:90px 20px;
-}
-
-#hero h2{
-font-size:2.4em;
-margin-bottom:15px;
-}
-
-#hero p{
-max-width:850px;
-margin:0 auto 30px;
-font-size:1.1em;
-}
-
-section{
-padding:70px 20px;
-max-width:1200px;
-margin:auto;
-}
-
-h2{
-text-align:center;
-color:var(--main);
-margin-bottom:40px;
-font-size:2em;
-}
-
-/* Services */
-.service{
-display:flex;
-gap:25px;
-background:white;
-border-radius:18px;
-padding:25px;
-margin-bottom:35px;
-box-shadow:0 15px 40px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.service:hover{transform:translateY(-5px)}
-
-.service img{
-width:260px;
-height:170px;
-border-radius:14px;
-object-fit:cover;
-}
-
-.service-content h3{
-margin-top:0;
-color:var(--main);
-}
-
-.service-content a{
-display:inline-block;
-margin-top:15px;
-background:var(--main);
-color:white;
-padding:8px 18px;
-border-radius:25px;
-text-decoration:none;
-font-weight:600;
-}
-
-.service-content a:hover{
-background:var(--accent);
-color:#000;
-}
-
-/* Sections text */
-.text-box{
-background:white;
-padding:30px;
-border-radius:18px;
-box-shadow:0 10px 30px rgba(0,0,0,.06);
-}
-
-/* Footer */
-footer{
-background:#0a1f44;
-color:white;
-text-align:center;
-padding:35px 15px;
-}
-
-footer a{color:var(--accent)}
-
-@media(max-width:768px){
-header{flex-wrap:wrap;gap:10px}
-nav{text-align:center;width:100%}
-.service{flex-direction:column}
-.service img{width:100%}
-}
+body {margin:0;font-family:'Arial',sans-serif;line-height:1.6;color:#333;background:#f9f9f9;}
+header{background:#004aad;color:white;position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:15px 25px;z-index:1000;box-shadow:0 4px 6px rgba(0,0,0,0.2);}
+header h1 a{color:white;text-decoration:none;font-size:1.6em;font-weight:bold;}
+header a.call-btn{background:#ffce00;color:#000;text-decoration:none;padding:10px 18px;border-radius:6px;font-weight:bold;transition:0.3s;}
+header a.call-btn:hover{background:#ffd633;}
+nav a{color:white;text-decoration:none;margin:0 12px;font-weight:bold;transition:0.3s;}
+nav a:hover{color:#ffd633;}
+section{padding:50px 25px;max-width:1200px;margin:auto;}
+h2{color:#004aad;margin-bottom:25px;text-align:center;font-size:2em;}
+.service{display:flex;flex-wrap:wrap;align-items:flex-start;margin-bottom:35px;background:white;padding:20px;border-radius:12px;box-shadow:0 6px 15px rgba(0,0,0,0.1);transition:0.3s;}
+.service:hover{box-shadow:0 8px 20px rgba(0,0,0,0.15);}
+.service img{width:100%;max-width:300px;margin-right:25px;border-radius:10px;object-fit:cover;}
+.service-content{flex:1;}
+.service-content h3{color:#004aad;margin-top:0;font-size:1.4em;}
+.service-content p{margin-bottom:12px;font-size:1em;}
+.service-content a{display:inline-block;margin-top:12px;background:#ffce00;color:#000;text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:bold;transition:0.3s;}
+.service-content a:hover{background:#ffd633;}
+footer{background:#222;color:white;text-align:center;padding:25px;margin-top:40px;font-size:0.95em;}
+footer a{color:#ffce00;text-decoration:none;margin:0 8px;}
+@media(max-width:768px){.service{flex-direction:column}.service img{margin:0 0 18px 0;}}
+.modal {display:none;position:fixed;z-index:2000;left:0;top:0;width:100%;height:100%;overflow:auto;background:rgba(0,0,0,0.65);}
+.modal-content {background:#fff;margin:8% auto;padding:25px;border-radius:12px;max-width:650px;position:relative;line-height:1.7;font-size:1em;}
+.close {color:#aaa;position:absolute;top:12px;right:18px;font-size:28px;font-weight:bold;cursor:pointer;}
+.close:hover{color:black;}
 </style>
 </head>
-
 <body>
 
 <header>
-<h1>Fixly | فكسلي</h1>
+<h1><a href="index.html">Fixly | فكسلي</a></h1>
 <nav>
 <a href="#services">خدماتنا</a>
-<a href="#why">لماذا فكسلي</a>
+<a href="#why">لماذا نحن</a>
 <a href="#about">من نحن</a>
 <a href="#contact">تواصل</a>
 </nav>
@@ -185,47 +47,47 @@ nav{text-align:center;width:100%}
 </header>
 
 <section id="hero">
-<h2>فكسلي – منصة الخدمات الذكية في السعودية</h2>
-<p>نوصلـك بأفضل الحرفيين في العزل، الصيانة، السباكة والكهرباء. تنفيذ مضمون، سرعة استجابة، وتواصل مباشر بدون تعقيد.</p>
-<a href="tel:+966531944492" class="call-btn">تواصل فوري</a>
+<h2>فكسلي – حلول مبتكرة توصلك بأفضل الحرفيين في السعودية</h2>
+<p>منصة سعودية مبتكرة تربط العملاء مباشرة بالحرفيين المحترفين في العزل، الصيانة، الكهرباء، السباكة، والترميم. جودة عالية، سرعة استجابة، تواصل مباشر، وأسعار تنافسية مع ضمان رضا العميل.</p>
+<a href="tel:+966531944492" class="call-btn">اتصل الآن</a>
 </section>
 
 <section id="services">
 <h2>خدماتنا</h2>
 
 <div class="service">
-<img src="https://via.placeholder.com/400x250?text=Insulation" alt="خدمات العزل">
+<img src="https://via.placeholder.com/300x200?text=عزل" alt="خدمة العزل">
 <div class="service-content">
 <h3>خدمات العزل</h3>
-<p>نقدم حلول عزل متكاملة تشمل عزل الأسطح، الخزانات، الفوم، الإيبوكسي، وحمامات السباحة. العزل يحمي المبنى من تسربات المياه، الرطوبة، وارتفاع الحرارة، مما يطيل عمر المنشآت ويقلل تكاليف الصيانة.</p>
-<a href="tel:+966531944492">اطلب الخدمة</a>
+<p>نقدم جميع أنواع العزل: أسطح، خزانات، فوم، إيبوكسي، حمامات سباحة. شرح مفصل لكل نوع، المشاكل التي يحلها العزل، نصائح الصيانة، وفوائد طويلة المدى. فريق محترف لضمان جودة التنفيذ وحماية المباني.</p>
+<a href="#" onclick="openModal('modal1')">المزيد</a>
 </div>
 </div>
 
 <div class="service">
-<img src="https://via.placeholder.com/400x250?text=Plumbing" alt="السباكة">
+<img src="https://via.placeholder.com/300x200?text=سباكة" alt="خدمة السباكة">
 <div class="service-content">
 <h3>السباكة</h3>
-<p>خدمات سباكة شاملة تشمل كشف تسربات المياه، إصلاح الأعطال، تركيب الأدوات الصحية، وصيانة الشبكات للمنازل والمنشآت مع ضمان جودة التنفيذ.</p>
-<a href="tel:+966531944492">اطلب الخدمة</a>
+<p>كشف تسربات المياه، إصلاح الأعطال، تركيب الأدوات الصحية، وصيانة شاملة للمنشآت والمنازل. حلول سريعة وفعالة لكل مشاكل السباكة مع ضمان رضا العميل.</p>
+<a href="#" onclick="openModal('modal2')">المزيد</a>
 </div>
 </div>
 
 <div class="service">
-<img src="https://via.placeholder.com/400x250?text=Electricity" alt="الكهرباء">
+<img src="https://via.placeholder.com/300x200?text=كهرباء" alt="خدمة الكهرباء">
 <div class="service-content">
 <h3>الكهرباء</h3>
-<p>تمديدات كهربائية، صيانة أعطال، تركيب مفاتيح ومخارج، مع الالتزام الكامل بمعايير السلامة لتوفير بيئة آمنة وعملية.</p>
-<a href="tel:+966531944492">اطلب الخدمة</a>
+<p>تمديدات، صيانة الأعطال، تركيب مفاتيح ومخارج، التزام كامل بمعايير السلامة. فريق كهربائي محترف لضمان أداء آمن ومثالي لجميع المنشآت.</p>
+<a href="#" onclick="openModal('modal3')">المزيد</a>
 </div>
 </div>
 
 <div class="service">
-<img src="https://via.placeholder.com/400x250?text=Maintenance" alt="الصيانة">
+<img src="https://via.placeholder.com/300x200?text=صيانة" alt="الصيانة العامة والترميم">
 <div class="service-content">
-<h3>الصيانة والترميم</h3>
-<p>أعمال صيانة وترميم شاملة للمباني، تشمل الإصلاحات الدورية وتحسين البنية التحتية للحفاظ على جودة المنشأة وقيمتها.</p>
-<a href="tel:+966531944492">اطلب الخدمة</a>
+<h3>الصيانة العامة والترميم</h3>
+<p>ترميم المباني، صيانة دورية، حلول شاملة للمنازل والمنشآت. تقديم أعلى جودة بأفضل سرعة مع متابعة مستمرة لضمان رضا العميل الكامل.</p>
+<a href="#" onclick="openModal('modal4')">المزيد</a>
 </div>
 </div>
 
@@ -233,30 +95,63 @@ nav{text-align:center;width:100%}
 
 <section id="why">
 <h2>لماذا فكسلي؟</h2>
-<div class="text-box">
-<p>نمتلك خبرة في السوق السعودي، نعمل مع حرفيين محترفين، نضمن سرعة الاستجابة وجودة التنفيذ، ونوفر تواصل مباشر بدون وسطاء.</p>
-</div>
+<p>خبرة سعودية، سرعة استجابة، حرفيون محترفون، جودة تنفيذ، تواصل مباشر مع العميل. نضمن أفضل تجربة لكل من يحتاج خدمات صيانة وعزل وترميم.</p>
 </section>
 
 <section id="about">
 <h2>من نحن</h2>
-<div class="text-box">
-<p>فكسلي منصة سعودية متخصصة في ربط العملاء بأفضل مقدمي الخدمات المنزلية والصيانة، نسعى لتقديم تجربة موثوقة وعملية تلبي احتياجات السوق.</p>
-</div>
+<p>فكسلي منصة سعودية رائدة تربط العملاء بالحرفيين المحترفين مع التزام كامل بالجودة ورضا العميل. هدفنا تقديم خدمات مبتكرة وفعالة لتجربة عميل استثنائية.</p>
 </section>
 
 <section id="contact">
 <h2>تواصل معنا</h2>
-<div class="text-box">
-<p>📞 الهاتف: <a href="tel:+966531944492">+966 53 194 4492</a></p>
-<p>📧 البريد الإلكتروني: <a href="mailto:fixly.sa@gmail.com">fixly.sa@gmail.com</a></p>
-</div>
+<p>الهاتف: <a href="tel:+966531944492">+966531944492</a></p>
+<p>البريد الإلكتروني: <a href="mailto:fixly.sa@gmail.com">fixly.sa@gmail.com</a></p>
 </section>
 
 <footer>
-<p>Fixly | فكسلي – منصة الخدمات والحرفيين في السعودية</p>
+<p>Fixly | فكسلي - حلول الصيانة والخدمات المنزلية في السعودية</p>
 <p>© جميع الحقوق محفوظة</p>
 </footer>
+
+<!-- Modals -->
+<div id="modal1" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal1')">&times;</span>
+<h3>خدمات العزل</h3>
+<p>تفاصيل كاملة عن العزل: أسطح، خزانات، حمامات سباحة، فوم، إيبوكسي. خطوات التنفيذ، مشاكل شائعة، نصائح الصيانة، وفريق متخصص لضمان حماية المباني لفترات طويلة.</p>
+</div>
+</div>
+
+<div id="modal2" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal2')">&times;</span>
+<h3>السباكة</h3>
+<p>كشف تسربات المياه، إصلاح الأعطال، تركيب الأدوات الصحية، وصيانة شاملة للمنشآت والمنازل. حلول سريعة وفعالة لكل مشاكل السباكة مع ضمان رضا العميل.</p>
+</div>
+</div>
+
+<div id="modal3" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal3')">&times;</span>
+<h3>الكهرباء</h3>
+<p>تمديدات وصيانة أعطال الكهرباء، تركيب مفاتيح ومخارج، التزام كامل بمعايير السلامة. فريق كهربائي محترف لضمان أداء آمن لجميع المنشآت.</p>
+</div>
+</div>
+
+<div id="modal4" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal4')">&times;</span>
+<h3>الصيانة العامة والترميم</h3>
+<p>ترميم المباني، صيانة دورية، حلول شاملة للمنازل والمنشآت. تقديم أعلى جودة بأفضل سرعة مع متابعة مستمرة لضمان رضا العميل الكامل.</p>
+</div>
+</div>
+
+<script>
+function openModal(id){document.getElementById(id).style.display='block';}
+function closeModal(id){document.getElementById(id).style.display='none';}
+window.onclick = function(event){['modal1','modal2','modal3','modal4'].forEach(id=>{if(event.target==document.getElementById(id)){closeModal(id)}});}
+</script>
 
 </body>
 </html>
