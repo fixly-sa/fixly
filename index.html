@@ -3,394 +3,510 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Fixly — صيانة وعزل احترافية</title>
-  <meta name="description" content="Fixly - خدمات صيانة وعزل احترافية، فريق مهندسين وفنيين معتمدين. احجز مهندس أو اتصل الآن.">
+  <title>فكسلي | Fixly: أفضل منصة سعودية لخدمات الصيانة</title>
+  <meta name="description" content="Fixly - أفضل منصة سعودية لخدمات الصيانة وا��عزل والدهان والسباكة والتكييف والعقود المؤسسية. تواصل مباشر مع حرفيين محترفين وضمان جودة وسرعة تنفيذ.">
+  <meta name="keywords" content="عزل, عزل اسطح, عزل خزانات, كشف تسريبات, سباكة, كهرباء, دهان, جبس, تكييف, تنظيف خزانات, صيانة عامة, ستالايت, تركيب معدات, عقود صيانة, خدمات الصيانة السعودية, Fixly">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#0b0f1a;
+      --bg:#071226;
       --panel:#0f1724;
       --muted:#b8c0c8;
-      --gold:#caa24a;
       --accent:#0ea5a3;
-      --glass: rgba(255,255,255,0.03);
-      --radius:14px;
+      --gold:#caa24a;
+      --radius:12px;
       --container:1100px;
       color-scheme: dark;
       font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{
-      margin:0;
-      background: linear-gradient(180deg,#071226 0%, #081428 60%), url('') no-repeat center/cover;
-      color:#eef2f6;
-      -webkit-font-smoothing:antialiased;
-      line-height:1.6;
-      padding-bottom:80px;
-    }
+    body{margin:0;background:linear-gradient(180deg,#071226 0%, #081428 60%);color:#eef2f6;line-height:1.6;padding-bottom:100px}
     a{color:inherit;text-decoration:none}
-    .wrap{max-width:var(--container);margin:0 auto;padding:28px;}
-    header{
-      display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0;
-      position:sticky;top:0;background:linear-gradient(90deg, rgba(7,10,20,0.6), rgba(7,10,20,0.6));
-      backdrop-filter: blur(6px);z-index:20;border-bottom:1px solid rgba(255,255,255,0.03)
-    }
-
-    /* Logo */
+    .wrap{max-width:var(--container);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;position:sticky;top:0;background:rgba(7,10,20,0.6);backdrop-filter:blur(6px);z-index:40;border-bottom:1px solid rgba(255,255,255,0.02)}
     .brand{display:flex;align-items:center;gap:12px}
-    .logo-badge{
-      width:56px;height:56px;border-radius:12px;padding:8px;display:grid;place-items:center;
-      background:linear-gradient(135deg, rgba(202,162,74,0.14), rgba(14,165,163,0.06));
-      box-shadow:0 8px 30px rgba(5,7,12,0.7);
-      cursor:pointer;
-    }
-    .logo-badge svg{display:block}
-
-    .brand-title{display:flex;flex-direction:column;line-height:1}
+    .logo-badge{width:64px;height:64px;border-radius:12px;padding:6px;display:grid;place-items:center;background:linear-gradient(135deg, rgba(202,162,74,0.06), rgba(14,165,163,0.03));cursor:pointer;overflow:hidden}
+    .logo-img{width:100%;height:100%;object-fit:contain;display:block}
+    .brand-title{display:flex;flex-direction:column}
     .brand-title .name{font-family:'Playfair Display', serif;font-size:18px;font-weight:700;color:var(--gold)}
-    .brand-title .tag{font-size:12px;color:var(--muted);margin-top:2px}
-
-    nav{display:flex;gap:16px;align-items:center}
-    nav a{color:var(--muted);font-weight:600;padding:8px 10px;border-radius:10px}
-    nav a:hover{color:#fff;background:rgba(255,255,255,0.02)}
-
-    /* Hero */
-    .hero{
-      margin-top:18px;padding:34px;border-radius:var(--radius);
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      display:grid;grid-template-columns:1fr 420px;gap:26px;align-items:center;box-shadow:0 12px 40px rgba(2,6,23,0.6)
-    }
-    .hero h1{font-family:'Playfair Display', serif;font-size:36px;margin:0;color:#fff}
-    .hero p.lead{color:var(--muted);margin-top:8px;max-width:58ch}
-    .hero .actions{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
-    .btn{padding:12px 14px;border-radius:12px;font-weight:700;cursor:pointer;border:0}
+    .brand-title .tag{font-size:13px;color:var(--muted)}
+    nav{display:flex;gap:12px;align-items:center}
+    nav a{color:var(--muted);font-weight:600;padding:8px 10px;border-radius:8px}
+    nav a:hover{background:rgba(255,255,255,0.02);color:#fff}
+    .hero{margin-top:18px;padding:32px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center;box-shadow:0 12px 40px rgba(2,6,23,0.6)}
+    .hero h1{font-family:'Playfair Display', serif;font-size:30px;margin:0;color:#fff}
+    .hero p.lead{color:var(--muted);margin-top:8px;max-width:60ch}
+    .actions{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{padding:10px 14px;border-radius:12px;font-weight:700;cursor:pointer;border:0}
     .btn-primary{background:linear-gradient(90deg,var(--gold), #e6c67b);color:#041018}
     .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
-
-    .hero-visual{
-      border-radius:12px;padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
-      display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;height:260px;
-      box-shadow: inset 0 -4px 0 rgba(255,255,255,0.01);
-    }
+    .hero-visual{border-radius:12px;padding:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);display:flex;align-items:center;justify-content:center;height:260px}
     .hero-visual img{width:100%;height:100%;object-fit:cover;border-radius:10px}
-
-    /* Services */
     section h2{margin:18px 0 12px;font-family:'Playfair Display', serif;color:#fff}
     .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:var(--panel);padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
-    .service-top{display:flex;align-items:center;gap:12px}
-    .service-icon{width:62px;height:62px;border-radius:10px;display:grid;place-items:center;font-size:26px;background:linear-gradient(135deg, rgba(202,162,74,0.08), rgba(14,165,163,0.04))}
+    .card{background:var(--panel);padding:16px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    .service-top{display:flex;gap:12px;align-items:center}
+    .service-icon{width:58px;height:58px;border-radius:10px;display:grid;place-items:center;font-size:26px;background:linear-gradient(135deg, rgba(202,162,74,0.06), rgba(14,165,163,0.03))}
     .service-title{font-weight:700;font-size:16px;color:#fff}
-    .service-desc{color:var(--muted);margin-top:8px;font-size:0.96rem}
-
+    .service-desc{color:var(--muted);margin-top:8px;font-size:0.95rem}
     .service-cta{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
     .more-btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;color:var(--muted);cursor:pointer}
     .contact-btn{background:var(--gold);color:#081018;padding:8px 12px;border-radius:10px;cursor:pointer}
-
-    /* Expanded details */
     .detail-hidden{display:none}
-    .detail{margin-top:12px;padding:14px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border-radius:10px}
+    .detail{margin-top:12px;padding:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border-radius:10px;color:var(--muted)}
     .subgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
     .subcard{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;display:flex;gap:12px;align-items:flex-start}
     .subcard img{width:120px;height:88px;object-fit:cover;border-radius:8px}
     .subcard h4{margin:0;font-size:15px}
-    .subcard p{margin:6px 0 0;color:var(--muted);font-size:0.95rem}
-
-    /* Contact section */
     .contact-area{display:grid;grid-template-columns:1fr 420px;gap:18px;margin-top:18px}
-    .contact-card{padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent)}
-    form{display:flex;flex-direction:column;gap:10px}
+    .contact-card{padding:16px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent)}
     input,textarea,select{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:12px;border-radius:10px;color:inherit}
     .muted{color:var(--muted)}
-
-    /* Floating contact */
     .float-contact{position:fixed;left:18px;bottom:22px;display:flex;flex-direction:column;gap:10px;z-index:60}
     .float-contact a{display:flex;align-items:center;gap:10px;background:linear-gradient(90deg,var(--gold),#e8c881);color:#081018;padding:12px;border-radius:12px;box-shadow:0 10px 30px rgba(10,10,10,0.6);font-weight:700}
-    .float-w{background:#25d366;color:#fff;padding:12px;border-radius:12px;display:flex;align-items:center;gap:10px;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,0.5)}
-
+    .float-w{background:#25d366;color:#fff;padding:12px;border-radius:12px;display:flex;align-items:center;gap:10px;font-weight:700}
     footer{margin-top:28px;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02);padding-top:18px}
-
-    /* Responsive */
-    @media (max-width:980px){
-      .hero{grid-template-columns:1fr}
-      .services-grid{grid-template-columns:repeat(2,1fr)}
-      .contact-area{grid-template-columns:1fr}
-      nav{display:none}
-    }
-    @media (max-width:560px){
-      .services-grid{grid-template-columns:1fr}
-      .hero-visual{height:180px}
-    }
+    @media (max-width:980px){.hero{grid-template-columns:1fr}.services-grid{grid-template-columns:repeat(2,1fr)}.contact-area{grid-template-columns:1fr}nav{display:none}}
+    @media (max-width:560px){.services-grid{grid-template-columns:1fr}.hero-visual{height:180px}.logo-badge{width:48px;height:48px}}
   </style>
 </head>
 <body>
   <div class="wrap" id="top">
     <header>
       <div class="brand">
-        <a href="#top" class="logo-badge" aria-label="شعار فيكسلي">
-          <!-- SVG logo: استبدل باللوجو الحقيقي لو عندك -->
-          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fixly logo">
-            <rect x="0.5" y="0.5" width="47" height="47" rx="10" stroke="rgba(202,162,74,0.18)" fill="url(#g)"/>
-            <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#0ea5a3"/><stop offset="1" stop-color="#caa24a"/></linearGradient></defs>
-            <path d="M14 33 L20 15 L26 33" stroke="#06131a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="34" cy="14" r="5" fill="#caa24a" />
-          </svg>
+        <a href="#top" class="logo-badge" aria-label="شعار فكسلي">
+          <!-- ضع ملف اللوجو هنا: assets/logo.svg أو assets/logo.png -->
+          <img src="assets/logo.svg" alt="شعار فكسلي" class="logo-img">
         </a>
         <div class="brand-title">
-          <a href="#top" class="name">Fixly</a>
-          <div class="tag">صيانة، عزل وتركيب — احترافيين</div>
+          <a href="#top" class="name">فكسلي | Fixly: أفضل منصة سعودية لخدمات الصيانة</a>
+          <div class="tag">تواصل مباشر مع حرفيين محترفين — ضمان جودة وسرعة تنفيذ في كل أنحاء السعودية</div>
         </div>
       </div>
 
       <nav aria-label="القائمة الرئيسية">
         <a href="#services">الخدمات</a>
-        <a href="#how">إزاي بنشتغل</a>
+        <a href="#how">إزاي نشتغل</a>
         <a href="#contact">احجز / تواصل</a>
       </nav>
     </header>
 
+    <!-- HERO -->
     <section class="hero" aria-labelledby="hero-title">
       <div>
-        <h1 id="hero-title">عزل وصيانة بمستوى لوكس — جودة وضمان</h1>
-        <p class="lead">مهندسين وفنيين معتمدين في العزل الحراري والمائي، أعمال كهرباء وسباكة وتركيبات — حلول مضمونة ومواعيد دقيقة وخدمة عملاء ممتازة.</p>
+        <h1 id="hero-title">فكسلي | Fixly: أفضل منصة سعودية لخدمات الصيانة</h1>
+        <p class="lead">تواصل مباشر مع حرفيين محترفين وضمان جودة وسرعة تنفيذ لكل أعمال المنازل والمنشآت في السعودية. جودة، ضمان وتواصل — احجز مهندس أو افتح دردشة واتساب فوراً.</p>
+
         <div class="actions">
-          <button class="btn btn-primary" onclick="openContact('طلب خدمة - من الصفحة الرئيسية')">احجز مهندس</button>
+          <button class="btn btn-primary" onclick="openContact('عام - احجز مهندس')">احجز مهندس</button>
           <a class="btn btn-ghost" href="#services">المزيد عن الخدمات</a>
         </div>
 
-        <div style="margin-top:14px;color:var(--muted);font-size:0.95rem">
-          رقم سريع: <a href="tel:+9665XXXXXXXX" style="color:var(--gold);font-weight:700">+966 5X XXX XXXX</a> — أو تواصل علطول على واتساب
+        <div style="margin-top:12px;color:var(--muted);font-size:0.95rem">
+          تواصل سريع: <a href="tel:+966531944492" style="color:var(--gold);font-weight:700">+966 53 194 4492</a> — أو افتح دردشة واتساب مباشرة
         </div>
       </div>
 
       <div class="hero-visual" aria-hidden="false">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="فريق فني محترف - Fixly">
+        <img src="assets/hero.jpg" alt="فريق فني محترف - Fixly" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop'">
       </div>
     </section>
 
+    <!-- SERVICES -->
     <section id="services" aria-label="خدماتنا">
-      <h2>خدماتنا الرئيسية</h2>
+      <h2>خدماتنا — احترافية مضمونة</h2>
       <div class="services-grid">
-        <!-- Service 1: العزل (مفتاح) -->
+
+        <!-- 1 - العزل -->
         <div class="card">
           <div class="service-top">
             <div class="service-icon">🏗️</div>
             <div>
-              <div class="service-title">خدمات العزل المتكاملة</div>
-              <div class="service-desc">عزل أسطح، خزانات أرضية، مسابح، جدران وأرضيات بمعايير هندسية ومواد مضمونة.</div>
+              <div class="service-title">العزل (عزل حراري ومائي)</div>
+              <div class="service-desc">حلول عزل متكاملة للأسطح والخزانات والمسابح والجدران، مع مواد معتمدة وضمان فني. نركّز على مقاومة تسربات المياه، العزل الحراري لتقليل الطاقة، وعمر تشغيلي طويل.</div>
             </div>
           </div>
 
           <div class="service-cta">
-            <button class="more-btn" data-toggle="detail" data-target="detail-1">المزيد</button>
-            <button class="contact-btn" onclick="openContact('طلب عزل - استفسار')">اتصل الآن</button>
+            <button class="more-btn" data-toggle="detail" data-target="detail-insulation">المزيد</button>
+            <button class="contact-btn" onclick="openContact('العزل - احجز مهندس')">احجز مهندس</button>
           </div>
 
-          <div class="detail-hidden detail" id="detail-1">
-            <strong>أقسام العزل المتوفرة:</strong>
+          <div class="detail-hidden detail" id="detail-insulation">
+            <strong>أقسام العزل (تفاصيل مُحسّنة للسوق السعودي)</strong>
             <div class="subgrid">
-              <!-- Sub 1 -->
               <div class="subcard">
-                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800&auto=format&fit=crop&s=placeholder" alt="عزل أسطح">
+                <img src="assets/insulation-roof.jpg" alt="عزل أسطح - Fixly" onerror="this.src='https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800&auto=format&fit=crop'">
                 <div>
-                  <h4>عزل الأسطح (Roof Insulation)</h4>
-                  <p>عزل حراري ومائي للأسطح باستخدام بلمعه من البولي يوريثان أو طبقات البيتومين ما بعد تنظيف السطح ومانع تسرب. مناسب لأسطح خرسانية ومعدنية ويمنع التشققات وتجمع المياه.</p>
-                  <p class="muted">الفوائد: يخفض فاتورة التكييف، يمنع تسربات الأمطار، عمر طويل.</p>
-                  <div style="margin-top:8px;display:flex;gap:8px">
-                    <button class="more-btn" onclick="openModal('عزل الاسطح','تفاصيل عن عزل الأسطح...')">��رض التفاصيل</button>
-                    <button class="contact-btn" onclick="openContact('حجز عزل أسطح')">احجز مهندس</button>
-                  </div>
+                  <h4>عزل الأسطح</h4>
+                  <p>عزل حراري ومائي للأسطح باستخدام أنظمة بولي يوريثان رشّي، طبقات بيتومين مغطاة، وطبقات انعكاسية حرارية. نراعي العزل ضد حرارة الصيف في المناطق الحارة (الرياض، الشرقية) ومعايير مقاومة الأمطار والسيول. التركيب يشمل تنظيف السطح، معالجة التشققات، تطبيق مانع تسرب، واختبار الضغط للتأكد من عدم التسريب.</p>
+                  <p class="muted">الكلمات المفتاحية: عزل أسطح الرياض، عزل حراري جدة، عزل أسطح ضد تسرب.</p>
                 </div>
               </div>
 
-              <!-- Sub 2 -->
               <div class="subcard">
-                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=800&auto=format&fit=crop&s=placeholder" alt="عزل خزانات أرضية">
+                <img src="assets/insulation-tank.jpg" alt="عزل خزانات أرضية - Fixly" onerror="this.src='https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=800&auto=format&fit=crop'">
                 <div>
-                  <h4>عزل الخزان الأرضي</h4>
-                  <p>استخدام بطانات مانعة للتسرب، كوابل حماية، وطلاءات متخصصة تمنع تسربات المياه وحماية الخرسانة من التآكل والملوحة.</p>
-                  <p class="muted">مناسب للخزانات التقليدية والحديثة، مع ضمان اختبار تسرب قبل التسليم.</p>
-                  <div style="margin-top:8px;display:flex;gap:8px">
-                    <button class="more-btn" onclick="openModal('عزل الخزان الأرضي','تفاصيل عن عزل الخزانات...')">عرض التفاصيل</button>
-                    <button class="contact-btn" onclick="openContact('حجز عزل خزان أرضي')">احجز مهندس</button>
-                  </div>
+                  <h4>عزل الخزانات الأرضية والعلوية</h4>
+                  <p>حلول بطانات مانعة للتسرب (PVC، بولي يوريثان)، وطلاءات إيبوكسي خاصة للخزانات. نقوم بفحص الخزان، تنظيف، معالجة الشقوق وتطبيق طبقات عزل مع اختبار ضغط وتسرب قبل التسليم. مناسب للخزانات السكنية والتجارية في المدن السعودية.</p>
+                  <p class="muted">الكلمات المفتاحية: عزل خزان أرضي، عزل خزان علوي، بطانة خزان مياه السعودية.</p>
                 </div>
               </div>
 
-              <!-- Sub 3 -->
               <div class="subcard">
-                <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=800&auto=format&fit=crop&s=placeholder" alt="عزل المسابح">
+                <img src="assets/insulation-pool.jpg" alt="عزل مسابح - Fixly" onerror="this.src='https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=800&auto=format&fit=crop'">
                 <div>
                   <h4>عزل المسابح</h4>
-                  <p>أنظمة عزل مقاومة للمياه والكلور: بطانة PVC او طبقات بولي يوريثان متخصصة، مع تركيب وفحص للصمامات والتوصيلات والتشطيبات.</p>
-                  <p class="muted">نضمن منع التسريب وتحسين العمر التشغيلي للمسبح.</p>
-                  <div style="margin-top:8px;display:flex;gap:8px">
-                    <button class="more-btn" onclick="openModal('عزل المسابح','تفاصيل عن عزل المسابح...')">عرض التفاصيل</button>
-                    <button class="contact-btn" onclick="openContact('حجز ��زل مسابح')">احجز مهندس</button>
-                  </div>
+                  <p>تركيب بطانات PVC متخصصة، أو تطبيق طبقات بولي يوريثان مقاومة للكلور والأملاح. نضمن تقنيات ختم حواف، اختبار تسريب مائي شامل، ومعالجة تشققات الخرسانة قبل التركيب. نراعي المعايير لتحمل التعرض للكلور وطوارئ التسريب السريع.</p>
+                  <p class="muted">الكلمات المفتاحية: عزل مسابح، اصلاح تسرب مسبح، بطانة مسبح السعودية.</p>
                 </div>
               </div>
 
-              <!-- Sub 4 -->
               <div class="subcard">
-                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c46?q=80&w=800&auto=format&fit=crop&s=placeholder" alt="عزل جدران">
+                <img src="assets/insulation-walls.jpg" alt="عزل جدران - Fixly" onerror="this.src='https://images.unsplash.com/photo-1556911220-e15b29be8c46?q=80&w=800&auto=format&fit=crop'">
                 <div>
-                  <h4>ع��ل جدران خارجية وداخلية</h4>
-                  <p>عزل حراري وصوتي للجدران باستخدام ألواح حرارية ومواد مانعة للرطوبة، مناسب للمنازل والعمارات والمباني التجارية.</p>
-                  <p class="muted">تحسين الراحة الحرارية وتقليل استهلاك الطاقة.</p>
-                  <div style="margin-top:8px;display:flex;gap:8px">
-                    <button class="more-btn" onclick="openModal('عزل الجدران','تفاصيل عن عزل الجدران...')">عرض التفاصيل</button>
-                    <button class="contact-btn" onclick="openContact('حجز عزل جدران')">احجز مهندس</button>
-                  </div>
+                  <h4>عزل الجدران (حراري وصوتي)</h4>
+                  <p>عزل حراري للواجهات والجدران الداخلية باستخدام ألواح عزل حراري، والعزل الصوتي بين الشقق والمكاتب. نستخدم مواد عزل مقاومة للرطوبة ومراعية لدرجات الحرارة والصيانة الدورية.</p>
+                  <p class="muted">الكلمات المفتاحية: عزل جدران، عزل حراري واجهات، عزل صوتي السعودية.</p>
                 </div>
               </div>
             </div>
-            <p style="margin-top:12px;color:var(--muted)">ملاحظة: كل مشروع بيتم معاينته مبدئياً لتحديد المادة والأدوات المطلوبة. بنقدملك تقرير فني وسعر شفاف قبل البدء.</p>
+
+            <p style="margin-top:12px;color:var(--muted)">ملاحظة: كل عمل عزل يبدأ بمعاينة ميدانية مجانية لتحديد المادة والطريقة الأنسب للموقع ومتطلبات الضمان. نقدم تقرير فني مفصّل وعرض سعر شفاف قبل التنفيذ.</p>
           </div>
         </div>
 
-        <!-- Service 2: كهرباء -->
-        <div class="card">
-          <div class="service-top">
-            <div class="service-icon">🔌</div>
-            <div>
-              <div class="service-title">كهرباء - تركيب وصيانة</div>
-              <div class="service-desc">فحص لوحات، إصلاح أعطال، تركيب إنارات ذكية وأنظمة UPS وحماية من زيادة/هبوط الجهد.</div>
-            </div>
-          </div>
-          <div class="service-cta">
-            <button class="more-btn" data-toggle="detail" data-target="detail-2">المزيد</button>
-            <button class="contact-btn" onclick="openContact('طلب كهرباء - استشارة')">اتصل الآن</button>
-          </div>
-          <div class="detail-hidden detail" id="detail-2">
-            <p class="muted">نقدم: فحص لوحات، تمديدات، إصلاح دوائر قصيرة، تركيب لمبات LED، وأنظمة إنذار كهرباء.</p>
-            <div style="margin-top:8px;display:flex;gap:8px">
-              <button class="more-btn" onclick="openModal('خدمات الكهرباء','تفاصيل واشتراطات السلامة للتمديدات الكهربائية')">عرض التفاصيل</button>
-              <button class="contact-btn" onclick="openContact('حجز كهربائي')">احجز مهندس</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 3: سباكة -->
+        <!-- 2 - السباكة -->
         <div class="card">
           <div class="service-top">
             <div class="service-icon">🚰</div>
             <div>
-              <div class="service-title">سباكة وصيانة مواسير</div>
-              <div class="service-desc">كشف تسريبات بنظام الكاميرا، تبديل مواسير، صيانة مصارف وتركيب سيفونز وحلول مضادة للتكلس.</div>
+              <div class="service-title">السباكة وصيانة المواسير</div>
+              <div class="service-desc">خدمات سباكة شاملة: كشف تسريبات، إصلاح مواسير، استبدال شبكات، تنظيف مصارف وتركيب أجهزة الحماية ضد الترسيب والتكلس.</div>
             </div>
           </div>
+
           <div class="service-cta">
-            <button class="more-btn" data-toggle="detail" data-target="detail-3">المزيد</button>
-            <button class="contact-btn" onclick="openContact('طلب سباكة - استشارة')">اتصل الآن</button>
+            <button class="more-btn" data-toggle="detail" data-target="detail-plumbing">المزيد</button>
+            <button class="contact-btn" onclick="openContact('السباكة - احجز فني')">احجز فني</button>
           </div>
-          <div class="detail-hidden detail" id="detail-3">
-            <p class="muted">نستخدم معدات كشف حديثة ونقدّم ضمان إصلاحات. الخدمة تشمل الطوارئ وصيانة دورية للشركات.</p>
-            <div style="margin-top:8px;display:flex;gap:8px">
-              <button class="more-btn" onclick="openModal('خدمات السباكة','تفاصيل الفحص والتعديل واستبدال التركيبات')">عرض التفاصيل</button>
-              <button class="contact-btn" onclick="openContact('حجز سباك')">احجز فني</button>
+
+          <div class="detail-hidden detail" id="detail-plumbing">
+            <strong>أقسام السباكة ومعلومات مُفصّلة</strong>
+            <div class="subgrid">
+              <div class="subcard">
+                <img src="assets/plumbing-leak.jpg" alt="كشف تسريبات - Fixly" onerror="this.src='https://images.unsplash.com/photo-1581091012184-7b3b8a0f2b37?q=80&w=800&auto=format&fit=crop'">
+                <div>
+                  <h4>كشف التسريبات</h4>
+                  <p>خدمة كشف تسريبات متقدمة بكاميرات حرارية ونظام ضغط دون تهديم. نوفّر كشف تسريبات المياه الجوفية وخزانات المياه وأنابيب السباكة داخل الجدران. تقرير مفصل مع مكان التسريب ونسبة التلف وتوصية الإصلاح.</p>
+                  <p class="muted">الكلمات المفتاحية: كشف تسريبات جدة، كشف تسربات المياه الرياض، كشف تسريبات بدون تهديم.</p>
+                </div>
+              </div>
+
+              <div class="subcard">
+                <img src="assets/plumbing-repair.jpg" alt="صيدامة مواسير - Fixly" onerror="this.src='https://images.unsplash.com/photo-1526403224742-9b1f1f60db6a?q=80&w=800&auto=format&fit=crop'">
+                <div>
+                  <h4>تركيب وصيانة مواسير</h4>
+                  <p>استبدال أنابيب قديمة بأنظمة PPR وPEX، وإصلاح وصلات المجاري والتهوية. نستخدم مواسير ومواد مُعتمدة لمقاومة التكلس والملوحة في المناطق الساحلية.</p>
+                  <p class="muted">الكلمات المفتاحية: سباكة تركيب مواسير، اصلاح مواسير تسريب، سباكين السعودية.</p>
+                </div>
+              </div>
+
+              <div class="subcard">
+                <img src="assets/plumbing-fittings.jpg" alt="تركيبات صحية - Fixly" onerror="this.src='https://images.unsplash.com/photo-1581092334490-7f3a1c9f4f6b?q=80&w=800&auto=format&fit=crop'">
+                <div>
+                  <h4>تركيبات وصيانة صحيّة</h4>
+                  <p>تركيب أحواض، خزائن حمامات، سيفونات؛ ضبط ضغط المياه وتركيب مضخات وحلول مكافحة التكلس. نوفّر صيانة دورية للشركات والمباني السكنية.</p>
+                  <p class="muted">الكلمات المفتاحية: تركيب سخان، صيانة حمامات، تركيب خلاطات السعودية.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Service 4: صيانة أجهزة -->
+        <!-- 3 - الكهرباء -->
         <div class="card">
           <div class="service-top">
-            <div class="service-icon">📱</div>
+            <div class="service-icon">🔌</div>
             <div>
-              <div class="service-title">صيانة أجهزة إلكترونية</div>
-              <div class="service-desc">تصليح موبايلات، لابتوبات، شاشات وتبديل قطع غيار أصلية إن أمكن.</div>
+              <div class="service-title">الكهرباء - تركيب وصيانة</div>
+              <div class="service-desc">فحص لوحات، إصلاح أعطال، تمديدات كهربائية حسب المواصفات، وتركيب حماية من زيادة/هبوط الجهد وأنظمة إنذار.</div>
             </div>
           </div>
+
           <div class="service-cta">
-            <button class="more-btn" data-toggle="detail" data-target="detail-4">المزيد</button>
-            <button class="contact-btn" onclick="openContact('طلب صيانة أجهزة')">اتصل الآن</button>
+            <button class="more-btn" data-toggle="detail" data-target="detail-electric">المزيد</button>
+            <button class="contact-btn" onclick="openContact('كهرباء - احجز مهندس')">احجز مهندس</button>
           </div>
-          <div class="detail-hidden detail" id="detail-4">
-            <p class="muted">فحص مجاني في مركز الصيانة، تقدير تكلفة قبل الإصلاح، وضمان على قطع الغيار حسب الحالة.</p>
+
+          <div class="detail-hidden detail" id="detail-electric">
+            <p><strong>تفاصيل خدمات الكهرباء</strong></p>
+            <ul>
+              <li><strong>فحص اللوحات الكهربائية:</strong> اختبار أحمال، استبدال مفاتيح وحماية ضد قصور الدارة.</li>
+              <li><strong>تمديدات داخلية وخارجية:</strong> تمديد أسلاك ومعايير حماية وفق الكود السعودي.</li>
+              <li><strong>أنظمة إنارة وتركيبات ذكية:</strong> تركيب إنارة LED، أنظمة تحكم ذكي، وصلات UPS للطوارئ.</li>
+            </ul>
+            <p class="muted">الكلمات المفتاحية: كهربائي الرياض، تمديد كهرباء، فحص لوحة كهربائي�� السعودية.</p>
           </div>
         </div>
 
-        <!-- Service 5: توصيل وتركيب -->
+        <!-- 4 - النجارة -->
+        <div class="card">
+          <div class="service-top">
+            <div class="service-icon">🪚</div>
+            <div>
+              <div class="service-title">النجارة والأثاث المخصّص</div>
+              <div class="service-desc">تصنيع وتركيب مطابخ، خزائن، أبواب داخلية، أعمال تشطيب وإعادة تأهيل ديكور خشبي بمقاسات مخصّصة.</div>
+            </div>
+          </div>
+
+          <div class="service-cta">
+            <button class="more-btn" data-toggle="detail" data-target="detail-carpentry">المزيد</button>
+            <button class="contact-btn" onclick="openContact('نجارة - احجز نجار')">احجز نجار</button>
+          </div>
+
+          <div class="detail-hidden detail" id="detail-carpentry">
+            <p>نقدّم نجارة تفصيلية لمطابخ خشب/MDF مقاوم للرطوبة، أعمال أبواب داخلية وخارجية، تشطيبات ديكور خشبي وتركيبات أرضيات مخصصة. نستخدم مواد مناسبة لمناخ السعودية مع تنفيذ دقيق وتثبيت مضمون.</p>
+            <p class="muted">الكلمات المفتاحية: نجار تفصيل، مطابخ جاهزة، تركيب أبواب السعودية.</p>
+          </div>
+        </div>
+
+        <!-- 5 - الدهان والجبس -->
+        <div class="card">
+          <div class="service-top">
+            <div class="service-icon">🎨</div>
+            <div>
+              <div class="service-title">الدهان والجبس (تشطيبات داخلية وخارجية)</div>
+              <div class="service-desc">دهانات داخلية وخارجية، طلاء مقاوم للماء والحرارة، وجبس بانوهات وتشطيبات جبس بورد احترافية.</div>
+            </div>
+          </div>
+
+          <div class="service-cta">
+            <button class="more-btn" data-toggle="detail" data-target="detail-painting">المزيد</button>
+            <button class="contact-btn" onclick="openContact('الدهان والجبس - احجز فني')">احجز فني</button>
+          </div>
+
+          <div class="detail-hidden detail" id="detail-painting">
+            <strong>أقسام الدهان والجبس</strong>
+            <div class="subgrid">
+              <div class="subcard">
+                <img src="assets/painting-interior.jpg" alt="دهان داخلي - Fixly" onerror="this.src='https://images.unsplash.com/photo-1541976076758-6d1f3f3c0a78?q=80&w=800&auto=format&fit=crop'">
+                <div>
+                  <h4>الدهان الداخلي والخارجي</h4>
+                  <p>دهانات إيكولوجية وطلاءات مقاومة للرطوبة والحرارة، تشطيب ناعم، ودهانات خارجية تتحمّل ظروف المدن السعودية. خدمات تحضير السطح، معالجة الشقوق والطبقات الواقية.</p>
+                </div>
+              </div>
+
+              <div class="subcard">
+                <img src="assets/gypsum.jpg" alt="جبس و جبسون بورد - Fixly" onerror="this.src='https://images.unsplash.com/photo-1582582494709-4c7e1a9d0b3a?q=80&w=800&auto=format&fit=crop'">
+                <div>
+                  <h4>الجبس / جبسون بورد</h4>
+                  <p>تنفيذ أسقف معلقة، فواصل جبس بورد للجدران، وتشطيبات جبس عادي لتفاصيل الديكور. نقسم: <strong>جبسون بورد</strong> للواجهات والسقوف، و<strong>جبس تقليدي</strong> للتشطيب اليدوي والنقوش. نعطي حلول عزل صوتي عند الحاجة وتركيبات إضاءة مدمجة.</p>
+                </div>
+              </div>
+            </div>
+            <p class="muted">الكلمات المفتاحية: دهان داخلي جدة، جبسون بورد الرياض، تشطيب دهان السعودية.</p>
+          </div>
+        </div>
+
+        <!-- 6 - التكييف -->
+        <div class="card">
+          <div class="service-top">
+            <div class="service-icon">❄️</div>
+            <div>
+              <div class="service-title">التكييف (تركيب - صيانة - تنظيف)</div>
+              <div class="service-desc">تركيب وحدات تكييف، صيانة دورية، تنظيف فلاتر ومواسير الصرف، وإصلاح أعطال المكيفات بكفاءة.</div>
+            </div>
+          </div>
+
+          <div class="service-cta">
+            <button class="more-btn" data-toggle="detail" data-target="detail-ac">المزيد</button>
+            <button class="contact-btn" onclick="openContact('تكييف - احجز فني')">احجز فني</button>
+          </div>
+
+          <div class="detail-hidden detail" id="detail-ac">
+            <p><strong>خدمات التكييف</strong></p>
+            <ul>
+              <li><strong>تنظيف وصيانة دورية:</strong> تنظيف فلاتر، غسل المبادل، ومعايرة الأداء لتوفير استهلاك كهرباء أقل.</li>
+              <li><strong>تركيب ونقل وحدات:</strong> تركيب مكيفات سبليت ووحدات مركزية مع حساب قدرة التبريد المناسبة للمبنى.</li>
+              <li><strong>عزل مواسير وفتحات:</strong> عزل خطوط التبريد ومنع تكثف المياه.</li>
+            </ul>
+            <p class="muted">الكلمات المفتاحية: تنظيف مكيفات، تركيب مكيف سبليت، صيانة تكييف السعودية.</p>
+          </div>
+        </div>
+
+        <!-- 7 - التنظيف (بما في ذلك تنظيف الخزان العلوي) -->
+        <div class="card">
+          <div class="service-top">
+            <div class="service-icon">🧼</div>
+            <div>
+              <div class="service-title">التنظيف المتخصص (خزانات، مباني، وصيانة نظافة)</div>
+              <div class="service-desc">تنظيف خزانات علويّة وسفليّة، تنظيف مباني ومصانع، تعقيم، وإزالة الرواسب والشحوم مع تقارير فحص جودة المياه للخزانات.</div>
+            </div>
+          </div>
+
+          <div class="service-cta">
+            <button class="more-btn" data-toggle="detail" data-target="detail-cleaning">المزيد</button>
+            <button class="contact-btn" onclick="openContact('تنظيف - احجز فريق')">احجز فريق</button>
+          </div>
+
+          <div class="detail-hidden detail" id="detail-cleaning">
+            <strong>خدمات التنظيف المتوفرة</strong>
+            <div class="subgrid">
+              <div class="subcard">
+                <img src="assets/clean-tank.jpg" alt="تنظيف الخزان العلوي - Fixly" onerror="this.src='https://images.unsplash.com/photo-1581579180436-5c1f78b8f1a8?q=80&w=800&auto=format&fit=crop'">
+                <div>
+                  <h4>تنظيف الخزان العلوي</h4>
+                  <p>تنظيف وتعقيم الخزانات العلوية وإزالة الرواسب والطحالب، مع إجراء اختبار جودة مياه قبل وبعد الخدمة وتسليم شهادة تنظيف عند الطلب.</p>
+                </div>
+              </div>
+
+              <div class="subcard">
+                <img src="assets/building-clean.jpg" alt="تنظيف مباني - Fixly" onerror="this.src='https://images.unsplash.com/photo-1581579180436-5c1f78b8f1a8?q=80&w=800&auto=format&fit=crop'">
+                <div>
+                  <h4>تنظيف مباني ومنازل</h4>
+                  <p>خدمات تنظيف عامة وتعقيم للمنازل والمكاتب، تنظيف سجاد، شبابيك، ومتابعة جدول تنظيف دوري للشركات.</p>
+                </div>
+              </div>
+            </div>
+            <p class="muted">الكلمات المفتاحية: تنظيف خزانات الرياض، تنظيف منازل جدة، تعقيم مباني السعودية.</p>
+          </div>
+        </div>
+
+        <!-- 8 - صيانة عامة -->
+        <div class="card">
+          <div class="service-top">
+            <div class="service-icon">🛠️</div>
+            <div>
+              <div class="service-title">صيانه عامه</div>
+              <div class="service-desc">خدمات صيانة شاملة للمنازل والشركات: تركيب، إصلاح، صيانة دورية، وفريق طوارئ.</div>
+            </div>
+          </div>
+
+          <div class="service-cta">
+            <button class="more-btn" data-toggle="detail" data-target="detail-general">المزيد</button>
+            <button class="contact-btn" onclick="openContact('صيانة عامة - احجز خدمة')">احجز خدمة</button>
+          </div>
+
+          <div class="detail-hidden detail" id="detail-general">
+            <p>تشمل الصيانة العامة أعمال كهرباء وسباكة وخدمات تركيب وصيانة صغيرة (مثل تصليح أبواب، نوافذ، صيانة بلاط)، مع باقات صيانة دورية منفصلة تناسب المستهلك السكني والمؤسسي.</p>
+            <p class="muted">الكلمات المفتاحية: صيانه عامة، صيانة منازل السعودية، خدمة منزلية طوارئ.</p>
+          </div>
+        </div>
+
+        <!-- 9 - ستالايت -->
+        <div class="card">
+          <div class="service-top">
+            <div class="service-icon">📡</div>
+            <div>
+              <div class="service-title">خدمات ستالايت (دش - رسيفر - تركيب)</div>
+              <div class="service-desc">تركيب أقمار صناعية، ضبط الاستقبال، إعدادات رسيفر، وصيانة أنظمة الدش المنزلية والتجارية.</div>
+            </div>
+          </div>
+
+          <div class="service-cta">
+            <button class="more-btn" data-toggle="detail" data-target="detail-sat">المزيد</button>
+            <button class="contact-btn" onclick="openContact('ستالايت - احجز فني')">احجز فني</button>
+          </div>
+
+          <div class="detail-hidden detail" id="detail-sat">
+            <p>نركّب الأطباق، نضبط زوايا الإشارة، ونبرمج الرسيفر والاشتراكات إن تطلب. خدمة سريعة للمجمعات السكنية والفنادق والمطاعم.</p>
+            <p class="muted">الكلمات المفتاحية: تركيب دش، ضبط ستالايت، فني دش السعودية.</p>
+          </div>
+        </div>
+
+        <!-- 10 - توصيل وتركيب معدات -->
         <div class="card">
           <div class="service-top">
             <div class="service-icon">🚚</div>
             <div>
               <div class="service-title">توصيل وتركيب معدات</div>
-              <div class="service-desc">خدمة توصيل، تركيب ومتابعة، مع فريق متخصص للتركيب الآمن والتشغيل النهائي.</div>
+              <div class="service-desc">نقل وتركيب أجهزة كهربائية، أجهزة تكييف، معدات ثقيلة وخفيفة مع فريق تركيب متخصص وتأمين على النقل.</div>
             </div>
           </div>
+
           <div class="service-cta">
-            <button class="more-btn" data-toggle="detail" data-target="detail-5">المزيد</button>
-            <button class="contact-btn" onclick="openContact('طلب توصيل/تركيب')">اتصل الآن</button>
+            <button class="more-btn" data-toggle="detail" data-target="detail-deliver">المزيد</button>
+            <button class="contact-btn" onclick="openContact('توصيل وتركيب - احجز فريق')">احجز فريق</button>
           </div>
-          <div class="detail-hidden detail" id="detail-5">
-            <p class="muted">خدمة للشركات والمنازل، نقل وتركيب معدات ثقيلة أو هشة مع تأمين ونماذج استلام.</p>
+
+          <div class="detail-hidden detail" id="detail-deliver">
+            <p>خدمة نقل ورفع وتركيب للأجهزة الحساسة والثقيلة، تركيب مكيفات، أجهزة مطابخ، وشاشات كبيرة مع أدوات تثبيت احترافية وضمان سلامة التركيب.</p>
+            <p class="muted">الكلمات المفتاحية: تركيب أجهزة، توصيل معدات السعودية، نقل أثاث وتركيب.</p>
           </div>
         </div>
 
-        <!-- Service 6: عقود مؤسسية -->
+        <!-- 11 - عقود صيانة للمؤسسات -->
         <div class="card">
           <div class="service-top">
             <div class="service-icon">🏢</div>
             <div>
               <div class="service-title">عقود صيانة للمؤسسات</div>
-              <div class="service-desc">باقة صيانة دورية للشركات مع تقارير شهرية، فريق مخصص وخط طوارئ 24/7.</div>
+              <div class="service-desc">باقات صيانة سنوية وشهرية للمباني التجارية، مدارس، منشآت صناعية مع تقارير دورية وخدمة طوارئ.</div>
             </div>
           </div>
+
           <div class="service-cta">
-            <button class="more-btn" data-toggle="detail" data-target="detail-6">المزيد</button>
-            <button class="contact-btn" onclick="openContact('طلب عرض لعقد مؤسسي')">اتصل الآن</button>
+            <button class="more-btn" data-toggle="detail" data-target="detail-contracts">المزيد</button>
+            <button class="contact-btn" onclick="openContact('عقود صيانة - طلب عرض')">طلب عرض</button>
           </div>
-          <div class="detail-hidden detail" id="detail-6">
-            <p class="muted">نصمم خطة صيانة مناسبة لحجم منشأتك ونقدّم عروض سعر مرنة وخدمة سريعة.</p>
+
+          <div class="detail-hidden detail" id="detail-contracts">
+            <p>نقدم خطط صيانة مخصصة تشمل فحوصات دورية، صيانات وقائية، فريق ميداني مخصص، وتقرير تقني شهري. حلول عقود تناسب منشآت كل الأحجام مع إمكانية جدولية الصيانة 24/7.</p>
+            <p class="muted">الكلمات المفتاحية: عقود صيانة، صيانة مؤسسات السعودية، باقات صيانة شركات.</p>
           </div>
         </div>
 
       </div>
     </section>
 
-    <section id="how" aria-label="كيفية العمل" style="margin-top:20px">
-      <h2>إزاي بنشتغل</h2>
+    <!-- HOW WE WORK -->
+    <section id="how" aria-label="كيفية العمل" style="margin-top:22px">
+      <h2>إزاي نشتغل (ببساطة وبنبرة سعودية)</h2>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
         <div class="card" style="flex:1;min-width:240px">
-          <h3 style="margin:0 0 8px">1. معاينة مجانية</h3>
-          <p class="muted">ن��سل مهندس للفحص المبدئي وتحديد سبب المشكلة والمتطلبات الفنية.</p>
+          <h3 style="margin:0 0 8px">1. تواصل سريع</h3>
+          <p class="muted">تقدر تفتح دردشة واتساب أو تتصل مباشرة — بنرد خلال ساعات العمل الفعلية أو فورًا لو الحالة طوارئ.</p>
         </div>
         <div class="card" style="flex:1;min-width:240px">
-          <h3 style="margin:0 0 8px">2. تقرير وميزانية</h3>
-          <p class="muted">نقدّم تقرير فني مفصّل وسعر شفاف قبل البدء.</p>
+          <h3 style="margin:0 0 8px">2. معاينة وفحص</h3>
+          <p class="muted">نرسل مهندس أو فني لإجراء معاينة ميدانية مجانية أو مدفوعة حسب الحالة، ونقدّم تقرير وفني مع عرض سعر شفاف.</p>
         </div>
         <div class="card" style="flex:1;min-width:240px">
-          <h3 style="margin:0 0 8px">3. تنفيذ مع ضمان</h3>
-          <p class="muted">تنفيذ حسب المواعيد مع ضمان على الشغل والمواد حسب نوع الخدمة.</p>
+          <h3 style="margin:0 0 8px">3. تنفيذ ومتابعة</h3>
+          <p class="muted">تنفيذ على أعلى مستوى مع ضمانات على الشغل والمواد (حسب الخدمة)، وتوثيق العملية وتسليم تقرير نهائي.</p>
         </div>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" style="margin-top:18px">
       <h2>احجز / تواصل</h2>
       <div class="contact-area">
         <div class="contact-card card">
-          <p class="muted">اكتب تفاصيل طلبك واحنا نرد عليك بسرعة. ممكن تختار استلام عبر الهاتف أو زيارة مهندس.</p>
-          <form onsubmit="submitForm(event)">
-            <input id="c-name" placeholder="الاسم" required>
-            <input id="c-phone" placeholder="رقم الموبايل" required>
-            <input id="c-email" placeholder="الإيميل (اختياري)">
+          <p class="muted">ببساطة: اضغط زر "احجز مهندس" أو افتح واتساب — مش لازم تعبي استمارة. لو تبي تكتب تفاصيل نستخدم الفورم كخيار ثانوي.</p>
+          <form onsubmit="submitForm(event)" style="margin-top:10px">
+            <input id="c-name" placeholder="الاسم (اختياري)">
+            <input id="c-phone" placeholder="رقم الموبايل (مطلوب لو تحب نرد لك عبر ر��الة)">
             <select id="c-service">
-              <option value="">اختار الخدمة</option>
+              <option value="">اختار الخدمة (اختياري)</option>
               <option>عزل أسطح</option>
-              <option>عزل خزانات</option>
-              <option>عزل مسابح</option>
+              <option>كشف تسريبات</option>
               <option>كهرباء</option>
-              <option>سباكة</option>
-              <option>صيانة أجهزة</option>
+              <option>نجارة</option>
+              <option>دهان وجبس</option>
+              <option>تكييف</option>
+              <option>تنظيف خزان</option>
+              <option>صيانه عامه</option>
+              <option>ستالايت</option>
+              <option>توصيل وتركيب</option>
+              <option>عقد صيانة</option>
             </select>
-            <textarea id="c-msg" placeholder="تفاصيل الطلب" rows="4"></textarea>
+            <textarea id="c-msg" placeholder="اكتب تفاصيل الطلب (اختياري)" rows="4"></textarea>
             <div style="display:flex;gap:10px;margin-top:8px">
-              <button type="submit" class="btn btn-primary">أرسل الطلب</button>
-              <button type="button" class="btn btn-ghost" onclick="openContact('طلب عام من نموذج الحجز')">اتصل بي فوراً</button>
+              <button type="submit" class="btn btn-primary">إرسال عبر واتساب</button>
+              <button type="button" class="btn btn-ghost" onclick="openContact('عام - تواصل سريع')">اتصل / واتساب فوراً</button>
             </div>
             <div id="formStatus" class="muted" style="margin-top:8px"></div>
           </form>
@@ -398,12 +514,12 @@
 
         <div class="card contact-card">
           <h3 style="margin:0 0 8px">معلومات التواصل</h3>
-          <p class="muted">العنوان: شارع المثال، المدينة</p>
-          <p class="muted">الهاتف: <a href="tel:+9665XXXXXXXX" style="color:var(--gold)">+966 5X XXX XXXX</a></p>
+          <p class="muted">العنوان: شارع المثال، المدينة (نخدم جميع مناطق السعودية)</p>
+          <p class="muted">الهاتف: <a href="tel:+966531944492" style="color:var(--gold)">+966 53 194 4492</a></p>
           <p class="muted">البريد: <a href="mailto:hello@fixly.example" style="color:var(--gold)">hello@fixly.example</a></p>
           <div style="margin-top:12px">
-            <strong>ساعات العمل</strong>
-            <p class="muted">الأحد - السبت 8 صباحاً - 8 مساءً</p>
+            <strong>ملاحظات</strong>
+            <p class="muted" style="margin:6px 0 0">نفضل التواصل عبر واتساب للحجز السريع والمتابعة — الأزرار الموجودة تسهّل العملية بدون تعب العميل.</p>
           </div>
         </div>
       </div>
@@ -412,18 +528,18 @@
     <footer>
       <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
         <div class="muted">© <span id="year"></span> Fixly — كل الحقوق محفوظة</div>
-        <div class="muted">تصميم واطلاق سريع — فريق Fixly</div>
+        <div class="muted">تصميم واطلاق سريع — فريق Fixly • فهرسة محسّنة لمحركات البحث</div>
       </div>
     </footer>
   </div>
 
-  <!-- floating contact -->
+  <!-- FLOATING CONTACT -->
   <div class="float-contact" aria-hidden="false">
-    <a class="float-w" href="https://wa.me/9665XXXXXXXX" target="_blank" rel="noopener">واتساب 🌐</a>
-    <a href="tel:+9665XXXXXXXX">اتصال مباشر ☎️</a>
+    <a class="float-w" id="waFloat" target="_blank" rel="noopener">واتساب للدردشة</a>
+    <a href="tel:+966531944492">اتصال مباشر ☎️</a>
   </div>
 
-  <!-- modal -->
+  <!-- MODAL -->
   <div id="modal" style="display:none;position:fixed;inset:0;background:rgba(2,6,23,0.6);z-index:80;align-items:center;justify-content:center;padding:20px">
     <div style="max-width:820px;width:100%;background:var(--panel);padding:18px;border-radius:12px;position:relative">
       <button onclick="closeModal()" style="position:absolute;left:12px;top:12px;background:transparent;border:0;color:var(--muted);font-weight:700;cursor:pointer">إغلاق ✕</button>
@@ -437,7 +553,27 @@
   </div>
 
   <script>
-    // سنة في الفوتر
+    // رقم الواتساب (بدون +)
+    const WA_PHONE = '966531944492';
+
+    // توليد رسالة واتساب بحسب الخدمة
+    function waMessageFor(service){
+      if(!service || service.trim()==='') service = 'خدمة عامة';
+      // نستخدم نص سعودي ودود
+      return `السلام عليكم، خدمة فكسلي — حياك الله! أبغى أحجز مهندس لـ: ${service}. يرجى التواصل لتحديد الموعد والتكلفة.`;
+    }
+
+    // تحديث رابط الفلووت
+    function updateFloatLink(){
+      const baseMsg = 'السلام عليكم، خدمة فكسلي — حياك الله! كيف نقدر نساعدك اليوم؟';
+      const link = 'https://wa.me/' + WA_PHONE + '?text=' + encodeURIComponent(baseMsg);
+      const waFloat = document.getElementById('waFloat');
+      waFloat.href = link;
+      waFloat.onclick = function(){ window.open(link, '_blank'); return false; }
+    }
+    updateFloatLink();
+
+    // سنة الفوتر
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // Toggle تفاصيل
@@ -451,49 +587,43 @@
       });
     });
 
-    // Modal for deeper details
+    // Modal
     function openModal(title, body){
       document.getElementById('modal-title').textContent = title;
       document.getElementById('modal-body').textContent = body || '';
       document.getElementById('modal').style.display = 'flex';
     }
-    function closeModal(){
-      document.getElementById('modal').style.display = 'none';
+    function closeModal(){ document.getElementById('modal').style.display = 'none'; }
+
+    // فتح واتساب مع رسالة معدّة بالخدمة
+    function openContact(service){
+      const msg = waMessageFor(service);
+      const waLink = 'https://wa.me/' + WA_PHONE + '?text=' + encodeURIComponent(msg);
+      window.open(waLink, '_blank');
     }
 
-    // Contact actions (opens mail client with prefilled subject)
-    function openContact(subject){
-      const phone = '+9665XXXXXXXX'; // غيّر للرقم الحقيقي
-      const wa = 'https://wa.me/9665XXXXXXXX'; // غيّر للواتساب الحقيقي
-      // نفتح نافذة اختيار: واتساب أولاً لو موجود، وإلا نفتح mailto
-      if(confirm('تريد التواصل عبر واتساب؟ اختر نعم للواتساب، لا للإيميل')) {
-        window.open(wa, '_blank');
-      } else {
-        window.location.href = 'mailto:hello@fixly.example?subject=' + encodeURIComponent(subject || 'استفسار من الموقع');
-      }
-    }
-
-    // Form submission (مبدئياً mailto أو رسالة افتراضية)
+    // فورم: نبعث للواتساب (اختياري للشخص اللي دخل بيانات)
     function submitForm(e){
       e.preventDefault();
       const name = document.getElementById('c-name').value.trim();
       const phone = document.getElementById('c-phone').value.trim();
-      const email = document.getElementById('c-email').value.trim();
-      const service = document.getElementById('c-service').value;
+      const service = document.getElementById('c-service').value || 'خدمة عامة';
       const msg = document.getElementById('c-msg').value.trim();
-      if(!name || !phone){ document.getElementById('formStatus').textContent = 'من فضلك اكتب الاسم ورقم الموبايل.'; return; }
-      // Option: استبدل بالـ API الخاص بك هنا أو Formspree
-      const body = `الاسم: ${name}\nالهاتف: ${phone}\nالخدمة: ${service}\nالبريد: ${email}\nالرسالة:\n${msg}`;
-      // نفتح البريد الافتراضي
-      window.location.href = 'mailto:hello@fixly.example?subject=' + encodeURIComponent('طلب من الموقع') + '&body=' + encodeURIComponent(body);
-      document.getElementById('formStatus').textContent = 'تم فتح تطبيق البريد لإرسال الطلب. لو عايزنا نبعت بدلًا من الإيميل ربط لنا API.';
+      const status = document.getElementById('formStatus');
+      // في حال عدم ادخال رقم، نطلب من المستخدم استخدام زر الحجز المباشر
+      if(!phone){
+        status.textContent = 'لو تفضلت، اكتب رقم الموبايل أو اضغط "اتصل / واتساب فوراً" للحجز السريع.';
+        return;
+      }
+      const body = `طلب من الموقع:\nالاسم: ${name || '-'}\nالجوال: ${phone}\nالخدمة: ${service}\nالتفاصيل: ${msg || '-'}`;
+      const waLink = 'https://wa.me/' + WA_PHONE + '?text=' + encodeURIComponent('السلام عليكم، خدمة فكسلي — حياك الله! عندي طلب:\n' + body);
+      window.open(waLink, '_blank');
+      status.textContent = 'جارٍ فتح واتساب لإرسال الطلب. شكراً لك!';
     }
 
-    // small helper for contact buttons on cards
+    // small fallback handlers
     document.querySelectorAll('.contact-btn').forEach(b => {
-      b.addEventListener('click', e => {
-        // allow inline onclick fallback -- nothing to do
-      });
+      b.addEventListener('click', (e) => { /* inline onclick handles it */ });
     });
   </script>
 </body>
